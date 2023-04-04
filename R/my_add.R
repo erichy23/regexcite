@@ -17,7 +17,7 @@ my_add <- function(x, y = 10) {
     return(NA)
   }
   else if (is.character(x) | is.character(y)){
-    return("One of your inputs contains a string value")
+    stop("One of your inputs contains a string value")
   }
   else{
     return(x+y)
