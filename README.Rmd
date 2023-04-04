@@ -37,7 +37,7 @@ devtools::install_github("jennybc/regexcite")
 ## Usage
 ### my_add
 A function designed for adding two numeric values.
-Use the `my_add()` when the input is numeric value.
+Use the `my_add()` when the inputs are numeric values.
 It will return error message if one or both of them are not.
 
 ```{r}
@@ -53,7 +53,7 @@ library(regexcite)
 my_add(10)
 ```
 
-If one or both of the input parameter is missing, it will return NA as below.
+If one or both of the input parameters are missing, it will return NA as below.
 ```{r}
 library(regexcite)
 
