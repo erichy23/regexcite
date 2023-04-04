@@ -30,6 +30,45 @@ devtools::install_github("jennybc/regexcite")
 
 ## Usage
 
+### my_add
+
+A function designed for adding two numeric values. Use the `my_add()`
+when the input is numeric value. It will return error message if one or
+both of them are not.
+
+``` r
+library(regexcite)
+
+my_add(1, 20)
+#> [1] 21
+```
+
+The default value of the second parameter is 10, so if there’s only one
+number given, it will add 10 to it and return the result.
+
+``` r
+library(regexcite)
+
+my_add(10)
+#> [1] 20
+```
+
+If one or both of the input parameter is missing, it will return NA as
+below.
+
+``` r
+library(regexcite)
+
+my_add(NA)
+#> [1] NA
+my_add(10, NA)
+#> [1] NA
+my_add(NA, 10)
+#> [1] NA
+```
+
+### str_split_one
+
 A fairly common task when dealing with strings is the need to split a
 single string into many parts. This is what `base::strplit()` and
 `stringr::str_split()` do.
